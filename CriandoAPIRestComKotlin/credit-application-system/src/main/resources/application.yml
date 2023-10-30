@@ -1,0 +1,23 @@
+server:
+  port: 5050
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:mem:credit_application_system
+      username: tsilva
+      password: 1704
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        trace: false
+        web-allow-others: false
+
